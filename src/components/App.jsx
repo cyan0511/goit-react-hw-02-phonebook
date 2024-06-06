@@ -44,7 +44,7 @@ export class App extends Component {
   };
 
   render() {
-    const { contacts, filter, findBy, number } = this.state;
+    const { contacts, filter, findBy } = this.state;
     const contactList = contacts
       .filter(c => findBy === '' ||  c[findBy].toLowerCase().includes(filter));
 
